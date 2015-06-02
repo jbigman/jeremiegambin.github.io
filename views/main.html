@@ -186,7 +186,7 @@
                                 <rating ng-model="skill.level" max="4" readonly="true"
                                         on-hover="hoveringOver(value)"
                                         on-leave="overStar = null"
-                                        state-on="'yellow glyphicon-star'"
+                                        state-on="'dark-yellow glyphicon-star'"
                                         state-off="'star-empty-color glyphicon-star'">
                                 </rating>
                             </h4>
@@ -247,40 +247,40 @@
     <div ng-repeat="exp in experiences">
         <div class="portfolio-modal modal fade" ng-repeat="project in exp.company.projects | orderBy:'-position'" id="project{{$parent.$index}}{{$index}}" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
-                <div class="close-modal close-modal-top" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="close-modal close-modal-bottom" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
+                            <div class="close-modal pull-right" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="close-modal hidden-xs" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal-body">
 
                                 <img ng-src="{{project.photo}}" class="img-responsive" alt="" style="margin-left: auto;margin-right: auto; ">
                                 <div class="portfolio-caption">
                                     <h4 translate="{{project.subTitle}}"></h4>
-                                    <p class="text-muted" translate="{{project.name}}"></p>
+                                    <p translate="{{project.name}}"></p>
                                 </div>
-                                <p ng-repeat="desc in project.desc" class="text-muted text-left">
+                                <p ng-repeat="desc in project.desc" class="text-left">
                                     <span translate="{{desc.p}}"></span>
                                 </p>
                                 <h4 style="margin-bottom:2em;">{{ "PROJECTS.CONTRIB" | translate}} <small>{{ "PROJECTS.CONTRIB_AS" | translate}} <span translate="{{project.mission.title}}"></span></small></h4>
-                                <p ng-repeat="desc in project.mission.description" class="text-muted text-left">
+                                <p ng-repeat="desc in project.mission.description" class="text-left">
                                     <span translate="{{desc.p}}"></span>
                                 </p>
                                 <h4>
                                     <span ng-repeat="skill in project.mission.skills" class="label label-{{skill.color}}" style="display:inline-block; margin-right:.5em; margin-top:.5em;">{{skill.name}}</span>
                                 </h4>
                                 <p class="text-left">
-                                    <span class="text-muted">{{ "PROJECTS.LINKS" | translate}}</span>
+                                    <span>{{ "PROJECTS.LINKS" | translate}}</span>
                                     <span ng-repeat="link in project.links">
                                         <a href="{{link.href}}" target="_blank"><span translate="{{link.title}}"></span></a><span ng-hide="$last"> / </span>
                                     </span>
