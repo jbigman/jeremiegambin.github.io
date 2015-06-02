@@ -1,0 +1,164 @@
+﻿{
+    "MENU": {
+        "HOME": "",
+        "ABOUT_ME": "About me",
+        "PROJECTS": "Projects",
+        "FORMATIONS": "Education",
+        "SKILLS": "Skills"
+    },
+    "HEADER": {
+        "PRE_TITLE": "Welcome!",
+        "TITLE": "IT'S NICE TO MEET YOU"
+    },
+    "LANG": {
+        "SELECT":  "Select a language",
+        "fr_FR": "Français",
+        "es_ES": "Español",
+        "it_IT": "Italiano",
+        "en_EN": "anglais",
+        "de_DE": "allemand"
+    },
+    "PROJECTS": {
+        "TITLE": "Projects I involved in",
+        "CONTRIB": "My contribution",
+        "CONTRIB_AS": "as",
+        "LINKS": "Links:"
+    },
+    "ABOUT": {
+        "TITLE": "Who am I ?",
+        "SUBTITLE": "Lorem ipsum dolor sim amet.",
+        "KEYWORDS": "Software engineer | Front-End developper | Designer ",
+        "DESC": "Lorem ipsum dolor sim amet."
+    },
+    "SKILLS": {
+        "IDE": "Integrated Development Environment",
+        "SOURCE_CONTROL": "Source control",
+        "BDD": "Databases",
+        "CONCEPT": "Concepts",
+        "DATA": "Data formats",
+        "HMI_TECH": "M/M Interfaces",
+        "FRAMEWORK": "FRAMEWORK",
+        "LANGUAGE": "Languages"
+    },
+    "EDUCATION": {
+        "TITLE": "Education",
+        "SUBTITLE": "No matter your age, the time to stop learning is never! Your awesome future depends on you continuing to educate yourself.",
+        "5": {
+            "TITLE": "Software ingineer",
+            "SUBTITLE": "November 2011",
+            "BODY": "AFTI - Apprenticeship Formation center, Orsay (Essonne)"
+        },
+        "3": {
+            "TITLE": "Three-year university degree in computer science",
+            "SUBTITLE": "June 2009",
+            "BODY": "Galilée Institute, Paris 13 University, Villetaneuse (Seine St Denis)"
+        },
+        "0": {
+            "TITLE": "A Levels/High-School degree in sciences, major mathematics",
+            "SUBTITLE": "July 2005",
+            "BODY": "Lycée Maurice Utrillo, Stains (Seine St Denis)"
+        },
+        "APPRENTICE": {
+            "TITLE": "Thales (period of) apprenticeship",
+            "SUBTITLE": "2009-2011",
+            "BODY": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam."
+        }
+    },
+    "EXPERIENCE": {
+        "0": {
+            "COMPANY": {
+                "TITLE": "Thales Group",
+                "SUBTITLE": "Fare collection reference.",
+                "PROJECTS": {
+                    "0": {
+                        "NAME": "Futur ...",
+                        "SUBTITLE": "Transcity Pass",
+                        "DESC": [
+                            {
+                                "0": "New contactless ticketing solution for the transport operators, Transcity Pass. is a modular solution that adapts to all network sizes and passenger flows."
+                            },
+                            {
+                                "1": "The offer TransCity Pass allows different tariff rules put in place by the operator: billing in a single trip, depending on distance traveled or as defined areas (urban, inter-urban, regional ...)."
+                            },
+                            {
+                                "2": "The tickets can be anonymous or customized, in paper (board sales) or without contact (tickets for single journeys, passes or multiple trips cards)."
+                            }
+                        ],
+                        "LINKS": {
+                            "0": {
+                                "TITLE": "ThalesGroup.com"
+                            }
+                        },
+                        "MISSION": {
+                            "TITLE": "Front end developper",
+                            "DESCRIPTION": "Within a team of 7-10 people, I participate in the development of<ul><li><b>Front-Office.</b> It allows users to access the monitoring of their subscriptions, to reload the electronic purse etc ...</li><li></b>Back-Office.<b> Connected to all the equipment of the system ensuring the sale and validation of tickets, it performs setup functions, supervision, reporting, media monitoring, customer management, financial distribution operators.</li></ul>"
+                        }
+                    },
+                    "1": {
+                        "NAME": "Danemark",
+                        "SUBTITLE": "Rejsekort Travel Card",
+                        "DESC": [
+                            {
+                                "0": "Thales provides the entire solution, from the expertise required to launch the new card to the ticketing equipment, security and operating systems"
+                            }
+                        ],
+                        "LINKS": {
+                            "0": {
+                                "TITLE": "ThalesGroup.com"
+                            }
+                        },
+                        "MISSION": {
+                            "TITLE": "Fireman",
+                            "DESCRIPTION": "Within a team of 8-10 people, I did a lot of fix over interfaces of the<ul><li><b>Front-Office</b> It allows users to access the monitoring of their subscriptions, to reload the electronic purse etc ...</li> <li ><b>Back-Office</b> Connected to all the equipment of the system ensuring the sale and validation of tickets, it performs setup functions, supervision, reporting, media monitoring, customer management, financial distribution operators.</li><li> <b>Call center</b> It allows tellers to help customers carry out transactions on their accounts or their transport cards.</li></ul>"
+                        }
+                    },
+                    "2": {
+                        "NAME": "Auckland - New Zealand",
+                        "SUBTITLE": "AT Hop Card System",
+                        "DESC": [
+                            {
+                                "0": "The AT Hop Card was created to try to remedy the diversity of bus companies offering travelers a unique transportation card, it concerns only the following companies: Metrolink, LINK, North Star, GO WEST and Waka Pacific."
+                            }
+                        ],
+                        "LINKS": {
+                            "0": {
+                                "TITLE": "Wikipedia.org"
+                            },
+                            "1": {
+                                "TITLE": "pvtistes.net"
+                            }
+                        },
+                        "MISSION": {
+                            "TITLE": "Front end developper",
+                            "DESCRIPTION": "Within a team of 10-12 people, I participated in the development of the <ul> <li ><b>Back-Office</b> Connected to all the equipment of the system ensuring the sale and validation of tickets, it performs setup functions, supervision, reporting, media monitoring, customer management, financial distribution operators.</li></ul>"
+                        }
+                    },
+                    "3": {
+                        "NAME": "Lisbon - Portugal",
+                        "SUBTITLE": "Lisboa Viva",
+                        "DESC": [
+                            {
+                                "0": "Ticketing solution operated by OTLIS transport operator."
+                            },
+                            {
+                                "1": "The data systems (pricing, system topology, translations for equipment, etc.) are stored in a file in XML format. To simplify data entry, Thales has developed its own XML editor whose construction data is based on the XSD scheme."
+                            }
+                        ],
+                        "LINKS": {
+                            "0": {
+                                "TITLE": "portalviva.pt"
+                            }
+                        },
+                        "MISSION": {
+                            "TITLE": "Trainee Software Engineer",
+                            "DESCRIPTION": "In partnership with my technical mentor, I have enriched the XML editor with new features:<ul><li><b>visualisation</b>(Datepicker, sliders, ...)</li><li><b>data validation</b>, complement the XSD validation scheme(start date less than an end date, ...)</li></ul>"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "COMMON": {
+        "CLOSE": "Close"
+    }
+}
