@@ -44,19 +44,19 @@
         "TITLE": "Education",
         "SUBTITLE": "No matter your age, the time to stop learning is never! Your awesome future depends on you continuing to educate yourself.",
         "5": {
-            "TITLE": "Software ingineer",
+            "TITLE": "Software engineer",
             "SUBTITLE": "November 2011",
-            "BODY": "AFTI - Apprenticeship Formation center, Orsay (Essonne)"
+            "BODY": "AFTI - Apprenticeship Formation center, Orsay, France"
         },
         "3": {
             "TITLE": "Three-year university degree in computer science",
             "SUBTITLE": "June 2009",
-            "BODY": "Galilée Institute, Paris 13 University, Villetaneuse (Seine St Denis)"
+            "BODY": "Institut Galilée, Paris 13 University, France"
         },
         "0": {
             "TITLE": "A Levels/High-School degree in sciences, major mathematics",
             "SUBTITLE": "July 2005",
-            "BODY": "Lycée Maurice Utrillo, Stains (Seine St Denis)"
+            "BODY": "Maurice Utrillo High-School, Stains, France"
         },
         "APPRENTICE": {
             "TITLE": "Thales (period of) apprenticeship",
