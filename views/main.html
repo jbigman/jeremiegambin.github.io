@@ -39,7 +39,7 @@
                             <li>
                                 <a href="https://github.com/jbigman" target="_blank" alt="Viadeo" title="github"><i class="socicon socicon-github"></i></a>
                             </li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
     <!-- Skills Grid Section -->
     <section id="skills" class="bg-light-gray">
         <div class="container">
@@ -243,53 +243,36 @@
             </div>
         </div>
     </footer>
+    <!-- Large modal -->
     <!-- Project Modals -->
     <div ng-repeat="exp in experiences">
-        <div class="portfolio-modal modal fade" ng-repeat="project in exp.company.projects | orderBy:'-position'" id="project{{$parent.$index}}{{$index}}" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="close-modal close-modal-right pull-right" data-dismiss="modal">
-                            <div class="lr">
-                                <div class="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="close-modal close-modal-left hidden-xs" data-dismiss="modal">
-                            <div class="lr">
-                                <div class="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
+        <div class="portfolio-modal modal fade bs-example-modal-lg" ng-repeat="project in exp.company.projects | orderBy:'-position'" id="project{{$parent.$index}}{{$index}}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background-color: #222; color: #bbb;">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-                                <img ng-src="{{project.photo}}" class="img-responsive" alt="" style="margin-left: auto;margin-right: auto; ">
-                                <div class="portfolio-caption">
-                                    <h4 translate="{{project.subTitle}}"></h4>
-                                    <p translate="{{project.name}}"></p>
-                                </div>
-                                <p ng-repeat="desc in project.desc" class="text-left">
-                                    <span translate="{{desc.p}}"></span>
-                                </p>
-                                <h4 style="margin-bottom:2em;">{{ "PROJECTS.CONTRIB" | translate}} <small>{{ "PROJECTS.CONTRIB_AS" | translate}} <span translate="{{project.mission.title}}"></span></small></h4>
-                                <p ng-repeat="desc in project.mission.description" class="text-left">
-                                    <span translate="{{desc.p}}"></span>
-                                </p>
-                                <h4>
-                                    <span ng-repeat="skill in project.mission.skills" class="label label-{{skill.color}}" style="display:inline-block; margin-right:.5em; margin-top:.5em;">{{skill.name}}</span>
-                                </h4>
-                                <p class="text-left">
-                                    <span>{{ "PROJECTS.LINKS" | translate}}</span>
-                                    <span ng-repeat="link in project.links">
-                                        <a href="{{link.href}}" target="_blank"><span translate="{{link.title}}"></span></a><span ng-hide="$last"> / </span>
-                                    </span>
-                                </p>
-                                <!--<p class="text-right">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> <span translate="COMMON.CLOSE"></span></button>
-                                </p>-->
-                            </div>
+                        <img ng-src="{{project.photo}}" class="img-responsive" alt="" style="margin-left: auto;margin-right: auto; ">
+                        <div class="portfolio-caption">
+                            <h4 translate="{{project.subTitle}}"></h4>
+                            <p translate="{{project.name}}"></p>
                         </div>
+                        <p ng-repeat="desc in project.desc" class="text-left">
+                            <span translate="{{desc.p}}"></span>
+                        </p>
+                        <h4 style="margin-bottom:2em;">{{ "PROJECTS.CONTRIB" | translate}} <small>{{ "PROJECTS.CONTRIB_AS" | translate}} <span translate="{{project.mission.title}}"></span></small></h4>
+                        <p ng-repeat="desc in project.mission.description" class="text-left">
+                            <span translate="{{desc.p}}"></span>
+                        </p>
+                        <h4>
+                            <span ng-repeat="skill in project.mission.skills" class="label label-{{skill.color}}" style="display:inline-block; margin-right:.5em; margin-top:.5em;">{{skill.name}}</span>
+                        </h4>
+                        <p class="text-left">
+                            <span>{{ "PROJECTS.LINKS" | translate}}</span>
+                            <span ng-repeat="link in project.links">
+                                <a href="{{link.href}}" target="_blank"><span translate="{{link.title}}"></span></a><span ng-hide="$last"> / </span>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
