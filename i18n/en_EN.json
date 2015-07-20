@@ -12,11 +12,11 @@
     },
     "LANG": {
         "SELECT":  "Select a language",
-        "fr_FR": "Français",
-        "es_ES": "Español",
-        "it_IT": "Italiano",
-        "en_EN": "anglais",
-        "de_DE": "allemand"
+        "fr_FR": "French",
+        "es_ES": "Spanish",
+        "it_IT": "Italian",
+        "en_EN": "English",
+        "de_DE": "Deutch"
     },
     "PROJECTS": {
         "TITLE": "Projects I involved in",
