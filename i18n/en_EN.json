@@ -14,7 +14,7 @@
         "SELECT":  "Select a language",
         "fr_FR": "French",
         "es_ES": "Spanish",
-        "it_IT": "Italian",
+        "it_IT": "Italiano",
         "en_EN": "English",
         "de_DE": "Deutch"
     },
@@ -27,7 +27,7 @@
     "ABOUT": {
         "TITLE": "Who am I ?",
         "SUBTITLE": "Lorem ipsum dolor sim amet.",
-        "KEYWORDS": "Software engineer | Full-stack developper | Designer ",
+        "KEYWORDS": "Software engineer | Full stack developper",
         "DESC": "Lorem ipsum dolor sim amet."
     },
     "SKILLS": {
