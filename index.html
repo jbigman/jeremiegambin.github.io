@@ -1,70 +1,344 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <base href="/">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>Jérémie Gambin</title>
-
-    <link rel="stylesheet" href="css/root.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700|Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://yarnpkg.com/en/package/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-<body ng-app="root">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!-- Part 1: Wrap all page content here -->
-    <div id="wrap">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#wrap">Jérémie GAMBIN</a>
-                </div>
-                <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavBarCtrl">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li ng-class="{ active: isActive('/') || isActive('/#home')}"><a href="#home" class="page-scroll"><span class="glyphicon glyphicon-home"></span> <span translate="MENU.HOME"></span></a></li>
-                        <li ng-class="{ active: isActive('/#about')}"><a href="#about" class="page-scroll"> <span translate="MENU.ABOUT_ME"></span></a></li>
-                        <li ng-class="{ active: isActive('/#education')}"><a href="#education" class="page-scroll"> <span translate="MENU.FORMATIONS"></span></a></li>
-                        <li ng-class="{ active: isActive('/#projects')}"><a href="#projects" class="page-scroll" <span translate="MENU.PROJECTS"></span></a></li>
-                        <li ng-class="{ active: isActive('/#skills')}"><a href="#skills" class="page-scroll"> <span translate="MENU.SKILLS"></span></a></li>
-                        <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-flag"></span><span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li role="presentation" class="dropdown-header" translate="LANG.SELECT">Select a language</li>
-                                <li class="divider"></li>
-                                <li><a ng-click="changeLanguage('en_EN')" translate="LANG.en_EN"></a></li>
-                                <li><a ng-click="changeLanguage('fr_FR')" translate="LANG.fr_FR"></a></li>
-                                <!--<li><a ng-click="changeLanguage('de_DE')" translate="LANG.de_DE"></a></li>-->
-                                <!--<li class="disbled muted"><a class="muted" disabled translate="LANG.it_IT"></a></li>-->
-                                <!--<li><a ng-click="changeLanguage('es_ES')" translate="LANG.es_ES"></a></li>-->
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
+<body lang="en">
+<section id="main">
+    <header id="title">
+        <h1>Jérémie <strong>GAMBIN</strong></h1>
+        <!-- <h3><span class="available"></span>Disponible</h3>-->
+    </header>
+    <section class="main-block concise">
+        <h2>
+            <i class="fa fa-suitcase"></i> Expériences
+        </h2>
+        <section class="blocks">
+            <div class="date">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>2017</span>
             </div>
-        </nav>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+                    <span class="header-title">Lead Tech application android</span>
+                    <span class="header-time"> (9 mois)</span>
+                    <span class="location">Thales Communication & Security</span>
+                </header>
+                <div>
+                    Développement en <b>autonomie</b> d'une application Android pour le système billettique danois. Elle
+                    permet aux conducteurs de bus de gérer les voyages, réaliser des ventes, ...
 
-        <div class="row">
-            <div ng-view=" "></div>
-        </div>
+                    <div style="padding-left: 5px">
+                        <span class="bold">Product owner</span>
+                        <div style="padding-left: 5px">
+                            Analyse des besoins
+                            <br/>
+                            Rédaction des stories
+                            <br/>
+                            Rédaction de la nouvelle documentation fonctionnelle avec les clients danois
+                        </div>
 
+
+                        <span class="bold">Lead tech Android</span>
+                        <div style="padding-left: 5px">
+                            Réalisation d'outils de tests pour l'intégration avec les équipements
+                            <br/>
+                            Formation d'un apprenti (Master 2)
+                            <br/>
+                            Réalisation du logiciel (conception, dev et tests)
+                            <span class="cartouche-xs">Android</span>
+                            <span class="cartouche-xs">TypeScript</span>
+                            <span class="cartouche-xs">react-native</span>
+                            <span class="cartouche-xs">Jenkins</span>
+                            <span class="cartouche-xs">MQTT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2017</span><span>2013</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+                    <span class="header-title">Développeur Full stack & Scrum master</span>
+                    <span class="header-time"> (5 ans)</span>
+                    <span class="location">Thales Communication & Security</span>
+                </header>
+                <div>
+                    Au sein d'une équipe Agile (Scrum) de 10-12 personnes et dans le cadre du développement d'un
+                    produit billettique (Dubai, Doha, Johannesbourg, ...)
+                    <div style="padding-left: 5px">
+                        <span class="bold">Support du Product Owner</span>
+
+                        <div style="padding-left: 5px">
+                            Ajout/relecture de stories dans le backlog
+                        </div>
+
+                        <span class="bold">Remplacements Scrum master</span>
+
+                        <div style="padding-left: 5px">
+                            Point d'entrée de l'équipe pour les personnes externes
+                            <br/>
+                            Animation de cérémonies
+                        </div>
+
+                        <span class="bold">Conception, développement et supports aux autres développeurs</span>
+                        <div style="padding-left: 5px">
+                            API - Backoffice
+                            <span class="cartouche-xs">JAVA</span>
+                            <span class="cartouche-xs">Spring</span>
+                            <span class="cartouche-xs">Hibernate</span>
+                            <span class="cartouche-xs">Docker</span>
+                            <span class="cartouche-xs">Jenkins</span>
+                            <span class="cartouche-xs">jUnit</span>
+                            <br/>
+                            Site back office (opérateurs) et front-office (usagers)
+                            <span class="cartouche-xs">Angular</span>
+                            <span class="cartouche-xs">JavaScript</span>
+                            <span class="cartouche-xs">Sass</span>
+                            <span class="cartouche-xs">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2013</span><span>2011</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+                    <span class="header-title">Développeur full-stack</span>
+
+                    <span class="header-time"> (2 ans)</span>
+                    <span class="location">Thales Communication & Security</span>
+                </header>
+                <div>
+                    Au sein d'une équipe 6-9 personnes et pour le système billettique d'Auckland (Nouvelle-Zélande)
+                    <div style="padding-left: 5px">
+                        <span class="bold">Développeur full-stack</span>
+                        <div style="padding-left: 5px">
+                            Conception, développement
+                            <span class="cartouche-xs">ASP.Net</span>
+                            <span class="cartouche-xs">C#</span>
+                            <span class="cartouche-xs">WCF</span>
+                            <span class="cartouche-xs">Entity Framework</span>
+                            <span class="cartouche-xs">.NET 3.5</span>
+                            <span class="cartouche-xs">LINQ</span>
+                            <span class="cartouche-xs">SQL Server</span>
+                            <br/>
+                            Rédaction des manuels utilisateurs (opérateurs de transport)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2011</span><span>2009</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+
+                    <span class="header-title">Développeur applicatif</span>
+
+                    <span class="header-time"> (2 ans en alternance)</span>
+                    <span class="location">Thales Communication & Security</span>
+
+                </header>
+                <div>
+                    Développement d'un éditeur XML, utilisé par les opérateurs de Lisbonne pour configurer leur
+                    système.
+                    <div style="padding-left: 5px">
+                        <span class="bold">Ingénieur logiciel</span>
+                        <div style="padding-left: 5px">
+                            Améliorations ergonomiques: ajout d'outils de visualisation (Datepicker, sliders, ...)
+                            <br/>
+                            Renforcement de la stabilité: ajout d'outils de validation de données (Complétion de
+                            matrices, date de début inférieure à une date de fin, ...)
+                            <br/>
+                            <span class="cartouche-xs">C#</span>
+                            <span class="cartouche-xs">WPF</span>
+                            <span class="cartouche-xs">.NET 3.5</span>
+                            <span class="cartouche-xs">MEF</span>
+                            <span class="cartouche-xs">LINQ</span>
+                            <span class="cartouche-xs">XML</span>
+                            <span class="cartouche-xs">XSD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blocks">
+            <div class="date">
+                <span>2009</span><span>2008</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+                    <span class="header-title">Responsable e-commerce</span>
+                    <span class="location">Gaminiature</span>
+                </header>
+                <div>
+                    Société de vente au détail de véhicules miniatures
+                    <div style="padding-left: 5px">
+
+                        <span class="bold">Webmaster</span>
+                        <div style="padding-left: 5px">
+                            Réalisation du site e-commerce de la société.
+                            <span class="cartouche-xs">PHP</span>
+                            <span class="cartouche-xs">magento</span>
+                            <span class="cartouche-xs">mysql</span>
+                            <br/>
+                            Création de la charte graphique (logo et impressions)
+                            <br/>
+                            Optimisation du référencement (seo)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="main-block concise">
+        <h2>
+            <i class="fa fa-graduation-cap"></i> Formation
+        </h2>
+        <section class="blocks">
+            <div class="date">
+                <span>2011</span><span>2009</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+                    <span class="header-title">Master Informatique en alternance</span>
+                    <span class="location">CFA AFTI, Orsay</span>
+                    <div>Expert en conduite et ingénierie de développement logiciel et système</div>
+                </header>
+            </div>
+        </section>
+        <section class="blocks">
+            <div class="date">
+                <span>2009</span><span>2006</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+
+                    <span class="header-title">Licence Informatique</span>
+                    <span class="location">Université Paris 13 - Institut Galilée</span>
+                    <div>Diplôme universitaire de technologie, Informatique</div>
+                </header>
+            </div>
+        </section>
+    </section>
+
+</section>
+<aside id="sidebar">
+    <div class="side-block" id="contact">
+        <h1>
+            Info
+        </h1>
+        <ul>
+            <li><i class="fa fa-map-marker"></i> Gif Sur yvette (91) FR</li>
+            <li><i class="fa fa-envelope"></i> jeremie.gambin@gmail.com</li>
+            <li><i class="fa fa-phone"></i> 06.24.89.44.49</li>
+            <li>
+                <i class="fa fa-github"></i>
+                <a href="https://github.com/jbigman">github.com/jbigman</a>
+            </li>
+            <li>
+                <i class="fa fa-stack-overflow"></i>
+                <a href="https://stackoverflow.com/users/2988788/jbigman">jbigman</a>
+            </li>
+            <li><i class="fa fa-car"></i> Permis B</li>
+        </ul>
     </div>
+    <div class="side-block" id="skills">
+        <h1>
+            Compétences
+        </h1>
+        <strong>Web</strong>
+        <ul>
+            <li>
+                <span class="cartouche">JavaScript</span>
+                <span class="cartouche">TypeScript</span>
+            </li>
+            <li>
+                <span class="cartouche">Node.js</span>
+                <span class="cartouche">Socket.io</span>
+            </li>
+            <li>
+                <span class="cartouche">React</span>
+                <span class="cartouche">React Native</span>
+                <span class="cartouche">AngularJs</span>
+            </li>
+            <li>
+                <span class="cartouche">HTML5</span>
+                <span class="cartouche">CSS3</span>
+                <span class="cartouche">Sass</span>
+            </li>
+        </ul>
+        <strong>Java</strong>
+        <ul>
+            <li>
+                <span class="cartouche">Spring</span>
+                <span class="cartouche">Android</span>
+            </li>
+        </ul>
+        <strong>Outils</strong>
+        <ul>
+            <li>
+                <span class="cartouche">Git</span>
+                <span class="cartouche">Jenkins</span>
+                <span class="cartouche">Docker</span>
+            </li>
+        </ul>
+        <strong>UX</strong>
+        <ul>
+            <li>
+                <span class="cartouche">Design</span>
+                <span class="cartouche">Ergonomie</span>
+            </li>
+        </ul>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
-    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.min.js"></script>
+        <strong>Methodologies</strong>
+        <ul>
+            <li>
+                <span class="cartouche">Agile</span>
+                <span class="cartouche">Scrum</span>
+            </li>
+        </ul>
 
-    <script src="js/root.js"></script>
 
+        <strong> Langues </strong>
+        <ul>
+            <li>
+                <span class="cartouche">Anglais technique</span>
+            </li>
+        </ul>
+    </div>
+    <div class="side-block" id="disclaimer">
+        <!-- NOOP -->
+    </div>
+</aside>
 </body>
 </html>
