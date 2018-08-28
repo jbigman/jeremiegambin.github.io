@@ -53,7 +53,7 @@ li {
     float: left;
     width: var(--main-width);
     padding: 0.25in 0.25in 0 0.25in;
-    font-size: 7.5pt;
+    font-size: 12pt;
 }
 
 #sidebar {
@@ -63,7 +63,7 @@ li {
     height: 100%;
     padding: 0.6in var(--sidebar-horizontal-padding);
     background-color: #f2f2f2;
-    font-size: 8.5pt;
+    font-size: 10pt;
 }
 
 /* main */
@@ -82,7 +82,7 @@ li {
 
 #title h1 {
     font-weight: 300;
-    font-size: 18pt;
+    font-size: 22pt;
     line-height: 1.5;
 }
 
@@ -92,7 +92,7 @@ li {
 }
 
 .subtitle {
-    font-size: 8pt;
+    font-size: 10pt;
 }
 
 /*** categorial blocks ***/
@@ -107,7 +107,7 @@ li {
     /* XXX: 0.5px for aligning fx printing */
     left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
     font-weight: 400;
-    font-size: 11pt;
+    font-size: 13pt;
     color: #555;
 }
 
@@ -164,7 +164,7 @@ li {
     flex: 0 0 var(--date-block-width);
     padding-top: calc(var(--row-blocks-padding-top) + 2.5pt) !important;
     padding-right: var(--decorator-horizontal-margin);
-    font-size: 7pt;
+    font-size: 9pt;
     text-align: right;
     line-height: 1;
 }
@@ -240,7 +240,7 @@ li {
 }
 
 .details h3 {
-    font-size: 9pt;
+    font-size: 11pt;
 }
 
 .details div  {
@@ -248,7 +248,7 @@ li {
 }
 
 .cartouche {
-    font-size: 7.5pt;
+    font-size:9pt;
 
     display: inline-block;
     color: black;
@@ -296,12 +296,12 @@ li {
 .header-title {
     flex: 1;
     font-weight: bold;
-    font-size: 9pt;
+    font-size: 11pt;
 }
 
 .header-time {
     font-style: italic;
-    font-size: 7pt;
+    font-size: 9pt;
 }
 
 .header-sub {
@@ -372,7 +372,7 @@ li {
 
 #sidebar h1 {
     font-weight: 400;
-    font-size: 11pt;
+    font-size: 13pt;
     margin-bottom: 0.1in;
 }
 
@@ -414,7 +414,7 @@ li {
     position: absolute;
     bottom: var(--sidebar-horizontal-padding);
     right: var(--sidebar-horizontal-padding);
-    font-size: 7.5pt;
+    font-size: 11pt;
     font-style: italic;
     line-height: 1.1;
     text-align: right;
