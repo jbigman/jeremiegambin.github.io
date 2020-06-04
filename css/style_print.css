@@ -84,6 +84,7 @@ li {
     font-weight: 300;
     font-size: 18pt;
     line-height: 1.5;
+    color:#02aef2;
 }
 
 #title h1 strong {
@@ -101,14 +102,14 @@ li {
     margin-top: 0.1in;
 }
 
-#main h2 {
+#main  .header-block {
     position: relative;
     top: var(--row-blocks-padding-top);
     /* XXX: 0.5px for aligning fx printing */
-    left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
-    font-weight: 400;
-    font-size: 11pt;
-    color: #555;
+    left: 0.45in;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
 }
 
 #main h2 > i {
@@ -250,7 +251,7 @@ li {
 .cartouche {
     font-size: 7.5pt;
 
-    display: inline-block;
+    display: table;
     color: black;
     margin: .1em;
     padding: .1em .6em;
@@ -297,6 +298,7 @@ li {
     flex: 1;
     font-weight: bold;
     font-size: 9pt;
+    color: #02aef2;
 }
 
 .header-time {
@@ -374,6 +376,7 @@ li {
     font-weight: 400;
     font-size: 11pt;
     margin-bottom: 0.1in;
+    color:#02aef2;
 }
 
 .side-block {

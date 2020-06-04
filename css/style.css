@@ -8,9 +8,9 @@
 }
 
 :root {
-    --page-width: 8.5in;
+    --page-width: 11.5in;
     --page-height: 11in;
-    --main-width: 6.4in;
+    --main-width: 8.4in;
     --sidebar-width: calc(var(--page-width) - var(--main-width));
     --decorator-horizontal-margin: 0.2in;
 
@@ -24,7 +24,7 @@
     --decorator-border: 1px solid #ccc;
 
     --row-blocks-padding-top: 5pt;
-    --date-block-width: 0.6in;
+    --date-block-width: 0.9in;
 
     --main-blocks-title-icon-offset-left: -19pt;
 }
@@ -32,7 +32,7 @@
 body {
     width: var(--page-width);
     height: var(--page-height);
-    margin: 0;
+    margin: 20px 0 0;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     line-height: 1.3;
@@ -53,17 +53,17 @@ li {
     float: left;
     width: var(--main-width);
     padding: 0.25in 0.25in 0 0.25in;
-    font-size: 12pt;
+    font-size: 16pt;
 }
 
 #sidebar {
     float: right;
     position: relative; /* for disclaimer */
     width: var(--sidebar-width);
-    height: 100%;
+    height: 200%;
     padding: 0.6in var(--sidebar-horizontal-padding);
     background-color: #f2f2f2;
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 /* main */
@@ -84,6 +84,7 @@ li {
     font-weight: 300;
     font-size: 22pt;
     line-height: 1.5;
+    color: #02aef2;
 }
 
 #title h1 strong {
@@ -92,22 +93,22 @@ li {
 }
 
 .subtitle {
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 /*** categorial blocks ***/
 
 .main-block {
-    margin-top: 0.1in;
+    margin-top: 0;
 }
 
-#main h2 {
+#main .header-block {
     position: relative;
     top: var(--row-blocks-padding-top);
     /* XXX: 0.5px for aligning fx printing */
-    left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
-    font-weight: 400;
-    font-size: 13pt;
+    left: 0.35in;
+    font-weight: bold;
+    font-size: 1.5em;
     color: #555;
 }
 
@@ -164,7 +165,7 @@ li {
     flex: 0 0 var(--date-block-width);
     padding-top: calc(var(--row-blocks-padding-top) + 2.5pt) !important;
     padding-right: var(--decorator-horizontal-margin);
-    font-size: 9pt;
+    font-size: 12pt;
     text-align: right;
     line-height: 1;
 }
@@ -176,9 +177,9 @@ li {
 .date span:nth-child(2)::before {
     position: relative;
     top: 1pt;
-    right: 5.5pt;
+    right: 9pt;
     display: block;
-    height: 10pt;
+    height: 17pt;
     content: '|';
 }
 
@@ -248,11 +249,11 @@ li {
 }
 
 .cartouche {
-    font-size:9pt;
+    font-size:12pt;
 
-    display: inline-block;
+    display: table;
     color: black;
-    margin: .1em;
+    margin: .3em 0;
     padding: .1em .6em;
     border: 1px solid #adb3b9;
     border-radius: 3px;
@@ -261,7 +262,7 @@ li {
 }
 
 .cartouche-xs {
-    font-size: 6pt;
+    font-size: 10pt;
 
     display: inline-block;
     color: black;
@@ -296,25 +297,23 @@ li {
 .header-title {
     flex: 1;
     font-weight: bold;
-    font-size: 11pt;
+    font-size: 16pt;
+    color: #02aef2;
 }
 
 .header-time {
     font-style: italic;
-    font-size: 9pt;
-}
-
-.header-sub {
-    font-style: italic;
+    font-size: 12pt;
 }
 
 .details .place {
     float: left;
-    font-size: 7.5pt;
+    font-size: 105pt;
 }
 
 .details .location {
     float: right;
+    font-size: 10pt;
 }
 
 .bold {
@@ -323,18 +322,6 @@ li {
 
 .details div {
     clear: both;
-}
-
-.details .location::before {
-    display: inline-block;
-    position: relative;
-    right: 3pt;
-    top: 0.25pt;
-    font-family: FontAwesome, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: inherit;
-    content: "\f041";
 }
 
 /***** fine-tunes on the lists... *****/
@@ -371,9 +358,10 @@ li {
 /* sidebar */
 
 #sidebar h1 {
-    font-weight: 400;
-    font-size: 13pt;
+    font-weight: 800;
+    font-size: 16pt;
     margin-bottom: 0.1in;
+    color:#02aef2;
 }
 
 .side-block {
