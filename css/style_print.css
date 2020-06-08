@@ -442,3 +442,7 @@ li {
     border-radius: 7.5px;
     background-color: #54d557;
 }
+
+.avatar {
+    max-width: 150px;
+}
